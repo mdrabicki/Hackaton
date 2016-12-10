@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include<QWidget>
+#include<QPushButton>
+#include<QLayout>
+#include<QVBoxLayout>
+#include"scene.h"
+#include"mainmenu.h"
 
 namespace Ui {
 class MainWindow;
@@ -12,11 +18,18 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    QVBoxLayout* layout;
+
 
 private:
-    Ui::MainWindow *ui;
+    Scene* scene;
+    MainMenu* centralWidget;
+public slots:
+    void startClick();
+
+
 };
 
 #endif // MAINWINDOW_H
