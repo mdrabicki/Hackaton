@@ -4,8 +4,12 @@
 
 class InteractiveObject:QPushButton
 {
+    Q_ENUMS(Item)
 public:
-    InteractiveObject();
+    enum Item{identificator};
+    InteractiveObject(Item);
+
+
 };
 
 #endif // INTERACTIVEOBJECT_H

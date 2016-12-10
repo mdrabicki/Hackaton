@@ -5,10 +5,6 @@
 Scene::Scene()
 {
 
-    QPixmap background(":/scenes/1/BG_1.png");
-    QPalette palette;
-    palette.setBrush(QPalette::Background,background);
-    this->setPalette(palette);
 
 
 
@@ -39,4 +35,8 @@ void Scene::openNewDialogBox(){
     QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
     }
     dialogBox->hide();
+}
+
+void Scene::identyficatorHover(){
+
 }

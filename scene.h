@@ -26,6 +26,7 @@ public:
 private slots:
     void exitClick();
     void openNewDialogBox();
+    void identyficatorHover();
 
 };
 
