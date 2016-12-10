@@ -6,12 +6,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)
 
 {
+    this->setStyleSheet("background-image:url(:/scenes/1/BG_1.png)");
     centralWidget=new MainMenu(this);
-    //this->setCentralWidget((QWidget*)centralWidget);
-    QPixmap background("E:\\Projekty\\QT\\Hackaton\\scenes\\1\\BG_1.png");
-    QPalette palette;
-    palette.setBrush(QPalette::Background,background);
-    this->setPalette(palette);
+    this->setCentralWidget((QWidget*)centralWidget);
+
 
 
 }

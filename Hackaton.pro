@@ -30,4 +30,4 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui
 
 RESOURCES += \
-    scenes/1/scene1.qrc
+    scene1.qrc

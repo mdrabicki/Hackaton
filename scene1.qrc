@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>scenes/1/BG_1.png</file>
+        <file>scenes/1/BG_1_identyfikator.png</file>
+        <file>scenes/1/BG_1_klucz.png</file>
+        <file>scenes/1/BG_1_notatki.png</file>
+        <file>scenes/1/BG_1_trup.png</file>
+        <file>scenes/1/main.png</file>
+        <file>scenes/1/scene1.qrc</file>
+    </qresource>
+</RCC>
