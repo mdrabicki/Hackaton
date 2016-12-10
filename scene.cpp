@@ -1,6 +1,7 @@
 #include "scene.h"
 #include <QTime>
 #include<QCoreApplication>
+#include"interactiveobject.h"
 
 Scene::Scene()
 {
@@ -12,6 +13,12 @@ Scene::Scene()
     test->setText("aadgbfguia");
     layout=new QVBoxLayout(this);
     layout->addWidget(test);
+
+    InteractiveObject* identificator = new InteractiveObject(this,InteractiveObject::Item::identificator);
+    InteractiveObject* wrench = new InteractiveObject(this,InteractiveObject::Item::wrench);
+
+
+
 
     openDialogBox=new QPushButton();
     openDialogBox->setText("Open Dialog Box");

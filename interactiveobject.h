@@ -1,16 +1,22 @@
 #ifndef INTERACTIVEOBJECT_H
 #define INTERACTIVEOBJECT_H
 #include<QPushButton>
+#include<QLabel>
 
-class InteractiveObject:QPushButton
+class InteractiveObject:public QPushButton
 {
     Q_ENUMS(Item)
+
+protected:
+    void hoverEnter(QHoverEvent* event);
+    void hoverLeave(QHoverEvent* event);
 public:
-    enum Item{identificator};
-    InteractiveObject(Item);
-    virtual void identificatorEnterEvent(QEvent* e);
-     Q_SIGNALS:
-    void identyficatorHovered();
+    enum Item{identificator,wrench,notes,body};
+    InteractiveObject(QWidget*,Item);
+     QPixmap* identificatorPixmap;
+    bool event(QEvent *event);
+    QWidget* parent;
+    QLabel* label;
 
 };
 
