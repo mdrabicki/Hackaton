@@ -37,6 +37,6 @@ void Scene::openNewDialogBox(){
     dialogBox->hide();
 }
 
-void Scene::identyficatorHover(){
+/*void Scene::identyficatorHover(){
 
-}
+}*/

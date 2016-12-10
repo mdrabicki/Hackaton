@@ -8,7 +8,9 @@ class InteractiveObject:QPushButton
 public:
     enum Item{identificator};
     InteractiveObject(Item);
-
+    virtual void identificatorEnterEvent(QEvent* e);
+     Q_SIGNALS:
+    void identyficatorHovered();
 
 };
 

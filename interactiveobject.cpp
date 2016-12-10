@@ -17,3 +17,9 @@ InteractiveObject::InteractiveObject(Item itemType)
 
 
 }
+
+void InteractiveObject::identificatorEnterEvent(QEvent* e){
+    Q_EMIT identyficatorHovered();
+
+    QWidget::enterEvent(e);
+}
