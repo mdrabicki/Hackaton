@@ -36,17 +36,18 @@ void Scene::exitClick(){
 
 void Scene::openNewDialogBox(){
     dialogBox=new DialogBox(this);
-    dialogBox->setStyleSheet("background:transparent;");
- //   dialogBox->move(0,0);
-//    dialogBox->show();
+ //   dialogBox->show();
+
 /*    QTime sleep = QTime::currentTime().addSecs(3);
 
     while(QTime::currentTime()<sleep){
     QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+    }*/
+
     }
-  //  dialogBox->hide();*/
+
+void Scene::newDialogBox(){
+
 }
 
-/*void Scene::identyficatorHover(){
 
-}*/

@@ -20,11 +20,13 @@ public:
     QVBoxLayout* layout;
     QPushButton* openDialogBox;
     DialogBox* dialogBox;
+    void newDialogBox();
 
 
 
 private slots:
     void exitClick();
+public slots:
     void openNewDialogBox();
 
 

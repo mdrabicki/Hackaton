@@ -10,5 +10,12 @@
         <file>portrets/dialogbox.png</file>
         <file>scenes/1/BG_1_monitor_glow.png</file>
         <file>scenes/1/BG_1_parts_glow.png</file>
+        <file>dialogs/1/body.txt</file>
+        <file>dialogs/1/computer.txt</file>
+        <file>dialogs/1/identificator.txt</file>
+        <file>dialogs/1/monitor.txt</file>
+        <file>dialogs/1/notes.txt</file>
+        <file>dialogs/1/onentry.txt</file>
+        <file>dialogs/1/wrench.txt</file>
     </qresource>
 </RCC>

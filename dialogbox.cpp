@@ -7,25 +7,22 @@
 DialogBox::DialogBox(QWidget *parent)
 {
 
- //   this->setWindowFlags(Qt::FramelessWindowHint);
- /*   textBox=new QPushButton(this);
-    textBox->setGeometry(QRect(50,50,300,300));
-    textBox->setText("TEJDBSJKDBKUJSDBKUSDUJ");
-    textBox->show();
-*/
 
-    label = new QLabel(parent);
+
+
+
+    this->setParent(parent);
     QPixmap pixmap(":/portrets/dialogbox.png");
+    label=new QLabel(this);
     label->setPixmap(pixmap);
-    label->setGeometry(0,0,1366,768);
-  //  label->setStyleSheet("background:transparent;");
-
-    label->show();
-
-
-
-
-
-
-
+    this->setGeometry(0,0,1366,768);
+    this->setStyleSheet("background:transparent;");
+    textBrowser=new QTextBrowser(this);
+    textBrowser->setGeometry(QRect(50,50,300,300));
+    textBrowser->setText("TEJDBSJKDBKUJSDBKUSDUJ");
+ //   label->mousePressEvent();
+    this->show();
+}
+void DialogBox::mousePressEvent(QMouseEvent* e){
+    this->hide();
 }

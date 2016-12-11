@@ -13,7 +13,7 @@ protected:
 public:
     enum Item{identificator,wrench,notes,body};
     InteractiveObject(QWidget*,Item);
-     QPixmap* identificatorPixmap;
+    QPixmap* itemPixmap;
     bool event(QEvent *event);
     QWidget* parent;
     QLabel* label;

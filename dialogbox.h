@@ -6,14 +6,18 @@
 #include<QVBoxLayout>
 #include<QImage>
 #include<QLabel>
-class DialogBox:public QWidget
+#include <QTextBrowser>
+class DialogBox:public QPushButton
 {
 public:
     DialogBox(QWidget* parent);
 private:
-    QPushButton* textBox;
-    QImage* portret;
+    void mousePressEvent(QMouseEvent* e);
     QLabel* label;
+    QTextBrowser* textBlock;
+
+
+
 };
 
 #endif // DIALOGBOX_H
