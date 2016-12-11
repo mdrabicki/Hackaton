@@ -1,5 +1,5 @@
 #include "interactiveobject.h"
-
+#include "mainwindow.h"
 #include<QtWidgets>
 InteractiveObject::InteractiveObject(QWidget* parent, Item itemType,int nr)
 {
@@ -16,6 +16,19 @@ InteractiveObject::InteractiveObject(QWidget* parent, Item itemType,int nr)
 
 
 
+}
+InteractiveObject::InteractiveObject(QWidget* parent, Item itemType,int nr,MainWindow* pointer)
+{
+    this->ItemType=itemType;
+    this->setParent(parent);
+    this->parent=parent;
+    setMouseTracking(true);
+    setAttribute(Qt::WA_Hover);
+    this->setStyleSheet("background:transparent;");
+
+    createHovers(nr,itemType);
+
+    this->pointer=pointer;
 }
 
 void InteractiveObject:: createHovers(int nr,Item itemType){
@@ -103,6 +116,9 @@ void InteractiveObject:: createHovers(int nr,Item itemType){
         this->setGeometry(239,330,68,56);
         itemPixmap= new QPixmap(":/scenes/4/identificator.png");
     break;
+    case(Item::door):
+            this->setGeometry(0,0,200,768);
+        connect(this,SIGNAL(pressed()),pointer,SLOT(nextScene()));
 
     };
     label = new QLabel(parent);

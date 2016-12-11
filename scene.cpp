@@ -4,8 +4,9 @@
 #include"interactiveobject.h"
 
 
-Scene::Scene(int nr)
+Scene::Scene(int nr,MainWindow* pointer)
 {
+    this->pointer=pointer;
     createIteams(nr);
 
 
@@ -23,6 +24,7 @@ void Scene::createIteams(int nr){
         monitor = new InteractiveObject(this, Item::monitor,1 );
         computer = new InteractiveObject(this,Item::computer,1);
         dialogBox=new DialogBox(this,Item::onentry);
+
         break;
     case 2:
         drawings = new InteractiveObject(this,Item::drawings,2);
@@ -34,7 +36,7 @@ void Scene::createIteams(int nr){
         break;
     case 3:
         agness= new InteractiveObject(this,Item::agness,3);
-        craddle= new InteractiveObject(this,Item::vaccination,3);
+        craddle= new InteractiveObject(this,Item::craddle,3);
         vaccination= new InteractiveObject(this,Item::vaccination,3);
         order= new InteractiveObject(this,Item::order,3);
         dialogBox= new DialogBox(this,Item::onentry3);
@@ -44,13 +46,15 @@ void Scene::createIteams(int nr){
         gun= new InteractiveObject(this,Item::gun,4);
         pills= new InteractiveObject(this,Item::pills,4);
         papers= new InteractiveObject(this,Item::papers,4);
-        dialogBox= new DialogBox(this,Item::onentry3);
+        identificator2= new InteractiveObject(this,Item::identificator2,4);
+        dialogBox= new DialogBox(this,Item::onentry4);
         break;
 
 
     default:
         break;
     }
+    door=new InteractiveObject(this,Item::door,0);
 
 }
 
@@ -63,6 +67,7 @@ void Scene::openNewDialogBox(){
     InteractiveObject* obj =(InteractiveObject*)sender();
 
     dialogBox=new DialogBox(this,obj->ItemType);
+
 
 
     }

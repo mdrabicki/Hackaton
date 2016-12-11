@@ -9,6 +9,7 @@
 #include<QVBoxLayout>
 #include<QCoreApplication>
 #include"dialogbox.h"
+#include"mainwindow.h"
 
 
 class Scene:public QWidget
@@ -16,11 +17,12 @@ class Scene:public QWidget
     Q_OBJECT
 
 public:
-    Scene(int nr);
+    Scene(int nr,MainWindow*);
     QPushButton* openDialogBox;
     DialogBox* dialogBox;
     void newDialogBox();
     void createIteams(int nr);
+    MainWindow* pointer;
 private:
     InteractiveObject* identificator;
     InteractiveObject* wrench;
@@ -44,6 +46,9 @@ private:
            InteractiveObject* pills;
            InteractiveObject* papers;
            InteractiveObject* identificator2;
+
+           InteractiveObject* door;
+
 
 private slots:
     void exitClick();

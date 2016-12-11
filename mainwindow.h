@@ -9,7 +9,9 @@
 #include"scene.h"
 #include"mainmenu.h"
 
+
 namespace Ui {
+
 class MainWindow;
 }
 
@@ -22,6 +24,8 @@ public:
     ~MainWindow();
     QVBoxLayout* layout;
     Scene* scene;
+    int nr=1;
+
 
 private:
 
@@ -29,6 +33,7 @@ private:
     void setScene(int nr);
 public slots:
     void startClick();
+    void nextScene();
 
 
 };

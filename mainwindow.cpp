@@ -2,12 +2,15 @@
 
 
 
+
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)
 
 {
 
-    setScene(2);
+    pointer=this;
+    setScene(nr);
 
 
 
@@ -25,7 +28,7 @@ MainWindow::~MainWindow()
 
 }
 void MainWindow::setScene(int nr ){
-    scene = new Scene(nr);
+    scene = new Scene(nr,this);
 
 
   QPixmap* background;
@@ -40,6 +43,7 @@ void MainWindow::setScene(int nr ){
         background=new QPixmap(":/scenes/3/BG_3.png");
         break;
     case 4:
+        background=new QPixmap(":/scenes/4/BG_4.png");
         break;
     case 5:
         break;
@@ -59,4 +63,8 @@ void MainWindow::setScene(int nr ){
     this->setCentralWidget((QWidget*)centralWidget);
      scene->setGeometry(0,0,1366,768);
 
+}
+void MainWindow::nextScene(){
+
+    setScene(nr);
 }
