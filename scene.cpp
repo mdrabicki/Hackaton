@@ -16,10 +16,12 @@ Scene::Scene()
 
     InteractiveObject* identificator = new InteractiveObject(this,InteractiveObject::Item::identificator);
     InteractiveObject* wrench = new InteractiveObject(this,InteractiveObject::Item::wrench);
+    InteractiveObject* body = new InteractiveObject(this,InteractiveObject::Item::body);
+    InteractiveObject* notes = new InteractiveObject(this,InteractiveObject::Item::notes);
 
 
 
-
+    QString string("abc");
     openDialogBox=new QPushButton();
     openDialogBox->setText("Open Dialog Box");
     layout->addWidget(openDialogBox);
@@ -34,14 +36,15 @@ void Scene::exitClick(){
 
 void Scene::openNewDialogBox(){
     dialogBox=new DialogBox(this);
-    dialogBox->move(0,0);
-    dialogBox->show();
-    QTime sleep = QTime::currentTime().addSecs(3);
+    dialogBox->setStyleSheet("background:transparent;");
+ //   dialogBox->move(0,0);
+//    dialogBox->show();
+/*    QTime sleep = QTime::currentTime().addSecs(3);
 
     while(QTime::currentTime()<sleep){
     QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
     }
-    dialogBox->hide();
+  //  dialogBox->hide();*/
 }
 
 /*void Scene::identyficatorHover(){

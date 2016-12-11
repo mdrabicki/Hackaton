@@ -7,5 +7,8 @@
         <file>scenes/1/BG_1_trup.png</file>
         <file>scenes/1/main.png</file>
         <file>scenes/1/scene1.qrc</file>
+        <file>portrets/dialogbox.png</file>
+        <file>scenes/1/BG_1_monitor_glow.png</file>
+        <file>scenes/1/BG_1_parts_glow.png</file>
     </qresource>
 </RCC>

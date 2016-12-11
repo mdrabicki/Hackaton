@@ -9,6 +9,7 @@ InteractiveObject::InteractiveObject(QWidget* parent, Item itemType)
     setAttribute(Qt::WA_Hover);
     this->show();
     this->setStyleSheet("background:transparent;");
+    connect(this,SIGNAL(released()),parent,SLOT(!!!));
     switch(itemType){
     case (Item::identificator):
             this->setGeometry(125,632,60,40);
@@ -18,6 +19,15 @@ InteractiveObject::InteractiveObject(QWidget* parent, Item itemType)
             this->setGeometry(836,449,95,40);
             identificatorPixmap= new QPixmap(":/scenes/1/BG_1_klucz.png");
         break;
+    case (Item::notes):
+        this->setGeometry(1197,619,60,75);
+        identificatorPixmap= new QPixmap(":/scenes/1/BG_1_notatki.png");
+        break;
+    case (Item::body):
+        this->setGeometry(463,486,315,204);
+        identificatorPixmap= new QPixmap(":/scenes/1/BG_1_trup.png");
+        break;
+
     }
 
 }
