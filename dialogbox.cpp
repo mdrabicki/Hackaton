@@ -9,8 +9,10 @@
 #endif
 DialogBox::DialogBox(QWidget *parent,Item item)
 {
-   // ActualItem=Item::onentry;
+
+
     QString fileURL;
+
     switch(item){
     case (Item::onentry):
        fileURL = ":/dialogs/1/onentry.txt";
@@ -34,6 +36,65 @@ DialogBox::DialogBox(QWidget *parent,Item item)
     case Item::monitor:
         fileURL = ":/dialogs/1/monitor.txt";
         break;
+
+
+    case Item::onentry2:
+        fileURL = ":/dialogs/2/onentry.txt";
+        break;
+    case Item::drawings:
+        fileURL = ":/dialogs/2/drawings.txt";
+        break;
+    case Item::ekchbert:
+        fileURL = ":/dialogs/2/ekchbert.txt";
+        break;
+    case Item::letter:
+        fileURL = ":/dialogs/2/letter.txt";
+        break;
+    case Item::machine:
+        fileURL = ":/dialogs/2/machine.txt";
+        break;
+    case Item::toolbox:
+        fileURL = ":/dialogs/2/toolbox.txt";
+        break;
+
+
+    case Item::agness:
+        fileURL = ":/dialogs/3/agness.txt";
+        break;
+    case Item::craddle:
+        fileURL = ":/dialogs/3/craddle.txt";
+        break;
+    case Item::vaccination:
+        fileURL = ":/dialogs/3/vaccination.txt";
+        break;
+    case Item::order:
+        fileURL = ":/dialogs/3/order.txt";
+        break;
+     case Item::onentry3:
+            fileURL = ":/dialogs/3/onentry.txt";
+            break;
+    case Item::desk:
+           fileURL = ":/dialogs/4/desk.txt";
+           break;
+    case Item::gun:
+           fileURL = ":/dialogs/4/gun.txt";
+           break;
+    case Item::pills:
+           fileURL = ":/dialogs/4/pills.txt";
+           break;
+    case Item::papers:
+           fileURL = ":/dialogs/4/papers.txt";
+           break;
+    case Item::identificator2:
+        fileURL = ":/dialogs/4/identificator.txt";
+        break;
+    case Item::onentry4:
+        fileURL = ":/dialogs/4/onentry.txt";
+        break;
+
+
+
+
 
     }
 

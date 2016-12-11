@@ -1,7 +1,0 @@
-#ifndef ENUMS_H
-#define ENUMS_H
-
-enum Item{identificator,monitor,notes,onentry,wrench,body,computer,
-          ekchbert,letter,drawings,machine,toolbox,onentry2};
-
-#endif // ENUMS_H

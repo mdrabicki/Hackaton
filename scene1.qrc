@@ -25,5 +25,41 @@
         <file>scenes/2/letter.png</file>
         <file>scenes/2/machine.png</file>
         <file>scenes/2/toolbox.png</file>
+        <file>dialogs/2/Drawings.txt</file>
+        <file>dialogs/2/Ekchbert 2.txt</file>
+        <file>dialogs/2/Ekchbert.txt</file>
+        <file>dialogs/2/Letter.txt</file>
+        <file>dialogs/2/Machine.txt</file>
+        <file>dialogs/2/Onentry.txt</file>
+        <file>dialogs/2/Toolbox.txt</file>
+        <file>dialogs/2/drawings.txt</file>
+        <file>dialogs/2/ekchbert 2.txt</file>
+        <file>dialogs/2/ekchbert.txt</file>
+        <file>dialogs/2/letter.txt</file>
+        <file>dialogs/2/machine.txt</file>
+        <file>dialogs/2/onentry.txt</file>
+        <file>dialogs/2/toolbox.txt</file>
+        <file>scenes/3/agness.png</file>
+        <file>scenes/3/BG_3.png</file>
+        <file>scenes/3/craddle.png</file>
+        <file>scenes/3/order.png</file>
+        <file>scenes/3/vaccination.png</file>
+        <file>dialogs/3/agness.txt</file>
+        <file>dialogs/3/craddle.txt</file>
+        <file>dialogs/3/onentry.txt</file>
+        <file>dialogs/3/order.txt</file>
+        <file>dialogs/3/vaccination.txt</file>
+        <file>dialogs/4/desk.txt</file>
+        <file>dialogs/4/gun.txt</file>
+        <file>dialogs/4/identificator.txt</file>
+        <file>dialogs/4/onentry.txt</file>
+        <file>dialogs/4/papers.txt</file>
+        <file>dialogs/4/pills.txt</file>
+        <file>scenes/4/BG_4.png</file>
+        <file>scenes/4/desk.png</file>
+        <file>scenes/4/gun.png</file>
+        <file>scenes/4/identificator.png</file>
+        <file>scenes/4/leki.png</file>
+        <file>scenes/4/papers.png</file>
     </qresource>
 </RCC>

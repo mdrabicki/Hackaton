@@ -21,10 +21,10 @@ public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
     QVBoxLayout* layout;
-
+    Scene* scene;
 
 private:
-    Scene* scene;
+
     MainMenu* centralWidget;
     void setScene(int nr);
 public slots:

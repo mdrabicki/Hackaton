@@ -1,0 +1,15 @@
+agness
+156,290,100,430
+
+kolyska 
+906,380,346,306
+
+rozkaz
+1232,126,80,110
+szer 
+wys
+
+szczepienia
+1280,272,123,97
+szer
+wys

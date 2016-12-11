@@ -13,10 +13,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
 }
 void MainWindow::startClick(){
-    scene = new Scene();
-    scene->setGeometry(0,0,1366,768);
+
 
     this->setCentralWidget(scene);
+
 }
 
 
@@ -25,15 +25,19 @@ MainWindow::~MainWindow()
 
 }
 void MainWindow::setScene(int nr ){
+    scene = new Scene(nr);
+
+
   QPixmap* background;
     switch (nr) {
     case 1:
         background=new QPixmap(":/scenes/1/BG_1.png");
         break;
     case 2:
-        background= new QPixmap(":/scenes/2/BG_2.png");
+        background=new QPixmap(":/scenes/2/BG_2.png");
         break;
     case 3:
+        background=new QPixmap(":/scenes/3/BG_3.png");
         break;
     case 4:
         break;
@@ -50,6 +54,9 @@ void MainWindow::setScene(int nr ){
     this->setPalette(palette);
 
 
+
     centralWidget=new MainMenu(this);
     this->setCentralWidget((QWidget*)centralWidget);
+     scene->setGeometry(0,0,1366,768);
+
 }

@@ -12,5 +12,7 @@ MainMenu::MainMenu(QWidget *parent)
 
     connect(start,SIGNAL(released()),parent,SLOT(startClick()));
 
+
+
 }
 
