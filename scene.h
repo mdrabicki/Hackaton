@@ -16,13 +16,11 @@ class Scene:public QWidget
     Q_OBJECT
 
 public:
-    Scene();
-    QPushButton* test;
-    QVBoxLayout* layout;
+    Scene(int nr);
     QPushButton* openDialogBox;
     DialogBox* dialogBox;
     void newDialogBox();
-
+    void createIteams(int nr);
 
 
 private slots:

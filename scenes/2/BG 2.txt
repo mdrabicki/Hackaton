@@ -1,0 +1,31 @@
+Egbert
+1066, 360
+
+szer 287
+
+wys 186
+
+list
+200,353
+wys 59
+szer 87
+
+napisy
+341,0
+
+szer 877
+
+wys 594
+
+narzedzia
+747,585
+szer 189
+
+wys 101
+
+radio
+1120,405
+
+szer 202
+
+wys 300

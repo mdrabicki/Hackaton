@@ -7,15 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 {
 
-    QPixmap background(":/scenes/1/BG_1.png");
-    QPalette palette;
-    palette.setBrush(QPalette::Background,background);
-//    palette.setBrush(QPalette::Background,test);
-    this->setPalette(palette);
-
-
-    centralWidget=new MainMenu(this);
-    this->setCentralWidget((QWidget*)centralWidget);
+    setScene(2);
 
 
 
@@ -31,4 +23,33 @@ void MainWindow::startClick(){
 MainWindow::~MainWindow()
 {
 
+}
+void MainWindow::setScene(int nr ){
+  QPixmap* background;
+    switch (nr) {
+    case 1:
+        background=new QPixmap(":/scenes/1/BG_1.png");
+        break;
+    case 2:
+        background= new QPixmap(":/scenes/2/BG_2.png");
+        break;
+    case 3:
+        break;
+    case 4:
+        break;
+    case 5:
+        break;
+    case 6:
+        break;
+    default:
+        break;
+    }
+
+    QPalette palette;
+    palette.setBrush(QPalette::Background,*background);
+    this->setPalette(palette);
+
+
+    centralWidget=new MainMenu(this);
+    this->setCentralWidget((QWidget*)centralWidget);
 }

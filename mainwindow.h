@@ -26,6 +26,7 @@ public:
 private:
     Scene* scene;
     MainMenu* centralWidget;
+    void setScene(int nr);
 public slots:
     void startClick();
 

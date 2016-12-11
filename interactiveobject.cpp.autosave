@@ -1,7 +1,7 @@
 #include "interactiveobject.h"
 
 #include<QtWidgets>
-InteractiveObject::InteractiveObject(QWidget* parent, Item itemType)
+InteractiveObject::InteractiveObject(QWidget* parent, Item itemType,int nr)
 {
     this->ItemType=itemType;
     this->setParent(parent);
@@ -9,7 +9,16 @@ InteractiveObject::InteractiveObject(QWidget* parent, Item itemType)
     setMouseTracking(true);
     setAttribute(Qt::WA_Hover);
     this->setStyleSheet("background:transparent;");
+    
+    createHovers(nr);
+    
 
+
+
+
+}
+
+void createHovers(int nr){
     switch(ItemType){
     case (Item::identificator):
             this->setGeometry(125,632,60,40);
@@ -43,11 +52,8 @@ InteractiveObject::InteractiveObject(QWidget* parent, Item itemType)
     label = new QLabel(parent);
  //  label->show();
     connect(this,SIGNAL(pressed()),parent,SLOT(openNewDialogBox()));
-
-
-
-
 }
+
 /*bool InteractiveObject::event(QEvent* event)
 {
   /*  switch(event->type())

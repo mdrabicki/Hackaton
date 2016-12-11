@@ -1,15 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>scenes/1/BG_1.png</file>
-        <file>scenes/1/BG_1_identyfikator.png</file>
-        <file>scenes/1/BG_1_klucz.png</file>
-        <file>scenes/1/BG_1_notatki.png</file>
-        <file>scenes/1/BG_1_trup.png</file>
         <file>scenes/1/main.png</file>
         <file>scenes/1/scene1.qrc</file>
         <file>portrets/dialogbox.png</file>
-        <file>scenes/1/BG_1_monitor_glow.png</file>
-        <file>scenes/1/BG_1_parts_glow.png</file>
         <file>dialogs/1/body.txt</file>
         <file>dialogs/1/computer.txt</file>
         <file>dialogs/1/identificator.txt</file>
@@ -18,5 +12,18 @@
         <file>dialogs/1/onentry.txt</file>
         <file>dialogs/1/wrench.txt</file>
         <file>dialogs/font.tff</file>
+        <file>scenes/1/body.png</file>
+        <file>scenes/1/computer.png</file>
+        <file>scenes/1/identificator.png</file>
+        <file>scenes/1/monitor.png</file>
+        <file>scenes/1/notes.png</file>
+        <file>scenes/1/wrench.png</file>
+        <file>scenes/2/BG 2.txt</file>
+        <file>scenes/2/BG_2.png</file>
+        <file>scenes/2/drawings.png</file>
+        <file>scenes/2/ekchbert.png</file>
+        <file>scenes/2/letter.png</file>
+        <file>scenes/2/machine.png</file>
+        <file>scenes/2/toolbox.png</file>
     </qresource>
 </RCC>

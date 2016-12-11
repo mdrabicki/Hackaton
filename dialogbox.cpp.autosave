@@ -7,10 +7,11 @@
 #define ENUMS_H
 
 #endif
-DialogBox::DialogBox(QWidget *parent,Item item)
+DialogBox::DialogBox(QWidget *parent,Item item,int nr)
 {
-   // ActualItem=Item::onentry;
+
     QString fileURL;
+    swit
     switch(item){
     case (Item::onentry):
        fileURL = ":/dialogs/1/onentry.txt";

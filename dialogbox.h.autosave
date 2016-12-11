@@ -17,7 +17,7 @@ class DialogBox:public QPushButton
 
 public:
 
-    DialogBox(QWidget* parent,Item);
+    DialogBox(QWidget* parent,Item,int nr);
 private:
     void mousePressEvent(QMouseEvent* e);
     QLabel* label;
