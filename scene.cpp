@@ -3,6 +3,7 @@
 #include<QCoreApplication>
 #include"interactiveobject.h"
 
+
 Scene::Scene()
 {
 
@@ -10,14 +11,14 @@ Scene::Scene()
 
 
     test= new QPushButton();
-    test->setText("aadgbfguia");
+    test->setText("ąćęłźaadgbfguia");
     layout=new QVBoxLayout(this);
     layout->addWidget(test);
 
-    InteractiveObject* identificator = new InteractiveObject(this,InteractiveObject::Item::identificator);
-    InteractiveObject* wrench = new InteractiveObject(this,InteractiveObject::Item::wrench);
-    InteractiveObject* body = new InteractiveObject(this,InteractiveObject::Item::body);
-    InteractiveObject* notes = new InteractiveObject(this,InteractiveObject::Item::notes);
+    InteractiveObject* identificator = new InteractiveObject(this,Item::identificator);
+    InteractiveObject* wrench = new InteractiveObject(this,Item::wrench);
+    InteractiveObject* body = new InteractiveObject(this,Item::body);
+    InteractiveObject* notes = new InteractiveObject(this,Item::notes);
 
 
 
@@ -26,7 +27,7 @@ Scene::Scene()
     openDialogBox->setText("Open Dialog Box");
     layout->addWidget(openDialogBox);
     layout->setAlignment(Qt::AlignHCenter);
-    connect(openDialogBox, SIGNAL(released()),this,SLOT(openNewDialogBox()));
+ //   connect(openDialogBox, SIGNAL(released()),this,SLOT(openNewDialogBox()));
     connect(test,SIGNAL(released()),this,SLOT(exitClick()));
 }
 
@@ -35,7 +36,14 @@ void Scene::exitClick(){
 }
 
 void Scene::openNewDialogBox(){
-    dialogBox=new DialogBox(this);
+
+    InteractiveObject* obj =(InteractiveObject*)sender();
+
+
+
+
+
+    dialogBox=new DialogBox(this,obj->ItemType);
  //   dialogBox->show();
 
 /*    QTime sleep = QTime::currentTime().addSecs(3);

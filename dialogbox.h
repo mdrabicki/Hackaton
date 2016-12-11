@@ -7,14 +7,22 @@
 #include<QImage>
 #include<QLabel>
 #include <QTextBrowser>
+#include"interactiveobject.h"
+#include<enums.h>
+#include<QPlainTextEdit>
+
+
 class DialogBox:public QPushButton
 {
+
+
 public:
-    DialogBox(QWidget* parent);
+
+    DialogBox(QWidget* parent,Item);
 private:
     void mousePressEvent(QMouseEvent* e);
     QLabel* label;
-    QTextBrowser* textBlock;
+    QPlainTextEdit* textBrowser;
 
 
 

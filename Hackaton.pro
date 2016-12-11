@@ -25,7 +25,8 @@ HEADERS  += mainwindow.h \
     startbutton.h \
     dialogbox.h \
     interactiveobject.h \
-    mainmenu.h
+    mainmenu.h \
+    enums.h
 
 FORMS    += mainwindow.ui
 

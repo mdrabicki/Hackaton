@@ -17,5 +17,6 @@
         <file>dialogs/1/notes.txt</file>
         <file>dialogs/1/onentry.txt</file>
         <file>dialogs/1/wrench.txt</file>
+        <file>dialogs/font.tff</file>
     </qresource>
 </RCC>

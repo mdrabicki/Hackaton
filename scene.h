@@ -10,6 +10,7 @@
 #include<QCoreApplication>
 #include"dialogbox.h"
 
+
 class Scene:public QWidget
 {
     Q_OBJECT

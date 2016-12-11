@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
 void MainWindow::startClick(){
     scene = new Scene();
     scene->setGeometry(0,0,1366,768);
-//    scene->setStyleSheet("background-image:url(E:/Projekty/QT/Hackaton/Test.png)");
+
     this->setCentralWidget(scene);
 }
 

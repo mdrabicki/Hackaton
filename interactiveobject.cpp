@@ -3,30 +3,35 @@
 #include<QtWidgets>
 InteractiveObject::InteractiveObject(QWidget* parent, Item itemType)
 {
-
+    this->ItemType=itemType;
     this->setParent(parent);
     this->parent=parent;
     setMouseTracking(true);
     setAttribute(Qt::WA_Hover);
     this->setStyleSheet("background:transparent;");
 
-    switch(itemType){
+    switch(ItemType){
     case (Item::identificator):
             this->setGeometry(125,632,60,40);
             itemPixmap= new QPixmap(":/scenes/1/BG_1_identyfikator.png");
+
         break;
     case (Item::wrench):
             this->setGeometry(836,449,95,40);
             itemPixmap= new QPixmap(":/scenes/1/BG_1_klucz.png");
-        break;
-    case (Item::notes):
-        this->setGeometry(1197,619,60,75);
-        itemPixmap= new QPixmap(":/scenes/1/BG_1_notatki.png");
+
         break;
     case (Item::body):
         this->setGeometry(463,486,315,204);
         itemPixmap= new QPixmap(":/scenes/1/BG_1_trup.png");
+
         break;
+    case (Item::notes):
+        this->setGeometry(1197,619,60,75);
+        itemPixmap= new QPixmap(":/scenes/1/BG_1_notatki.png");
+
+        break;
+
 
     }
     label = new QLabel(parent);
